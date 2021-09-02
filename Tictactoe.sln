@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe", "Tictactoe.csproj", "{DCD32D91-234E-4289-ABBA-9F3B0DCBE24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD32D91-234E-4289-ABBA-9F3B0DCBE24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD32D91-234E-4289-ABBA-9F3B0DCBE24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD32D91-234E-4289-ABBA-9F3B0DCBE24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD32D91-234E-4289-ABBA-9F3B0DCBE24E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
