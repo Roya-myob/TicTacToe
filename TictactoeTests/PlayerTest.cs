@@ -9,25 +9,27 @@ using Xunit;
             [Fact]
             public void Player_Has_A_Name_X()
             {
-                Player player = new Player("x");
+                Player player = new Player("x","1,1");
 
-                var actual = player.CheckName();
-                var expected = "X";
+                var actual = player.GetName();
+                var expected = "x";
                 
                 Assert.Equal(expected, actual);
                 
             }
             
             [Fact]
-            public void Player_Provides_2_Numbers()
+            public void Get_Player_Coord_And_Store_it()
             {
-                Player player = new Player("x");
+                Player player = new Player("x", "1,1");
+              
 
-                var actual = player.PlaceNumbers("1,1");
+                var actual = player.GetCoord();
                 var expected = "1,1";
                 
                 Assert.Equal(expected, actual);
             }
+            
           
 
         }

@@ -1,4 +1,5 @@
-﻿using Tictactoe;
+﻿using System;
+using Tictactoe;
 using Xunit;
 
 namespace TictactoeTests
