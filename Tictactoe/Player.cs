@@ -5,13 +5,20 @@ namespace Tictactoe
     public class Player
     {
         private string _name;
-        private string _coord;
+        private List<Coord>  _coord;
+        
         
 
-        public Player(string name, string coord)
+        public Player(string name)
         {
             _name = name;
-            _coord = coord;
+            Play();
+
+        }
+
+        public void Play()
+        {
+           _coord = new List<Coord>();
         }
 
         public string GetName()
@@ -20,13 +27,13 @@ namespace Tictactoe
         }
         
         //query
-        public string GetCoord()
+        public Coord GetCoord()
         {
             return _coord;
         }
         
         //command
-        public void AddCoord(string coord)
+        public void AddCoord(Coord coord)
         {
             _coord = coord;
         }
