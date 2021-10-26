@@ -6,8 +6,8 @@ namespace TictactoeTests
 {
     public class GameEngine
     {
-        [Fact]
-        public void Show_Welcome_Message()
+        //[Fact]
+        /*public void Show_Welcome_Message()
         {
             PrintIO printIo = new PrintIO();
 
@@ -16,7 +16,7 @@ namespace TictactoeTests
             
             Assert.Equal(expected, actual);
 
-        }
+        }*/
 
     }
     

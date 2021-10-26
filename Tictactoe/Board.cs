@@ -1,109 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using NUnit.Framework;
 
 namespace Tictactoe
 {
     public class Board
     {
-        private Coord [] BoardCoord = new Coord[]{};
-        
+        private List<BoardSquare> availableCoords = new List<BoardSquare>();
+
         public Board()
         {
-          InitiateBoard();
+          BuildBoard();
 
         }
 
-        public void InitiateBoard()
+        public void BuildBoard()
         {
-            BoardCoord = new[]
+            availableCoords = new List<BoardSquare>()
             {
-                new Coord(1, 1),
-                new Coord(1, 2),
-                new Coord(1, 3),
-                new Coord(2, 1),
-                new Coord(2, 2),
-                new Coord(2, 3),
-                new Coord(3, 1),
-                new Coord(3, 2),
-                new Coord(3, 3),
-                
+               new BoardSquare(new Coord(1, 1)),
+               new BoardSquare(new Coord(1, 2)),
+               new BoardSquare(new Coord(1, 3)),
+               new BoardSquare(new Coord(2, 1)),
+               new BoardSquare(new Coord(2, 2)),
+               new BoardSquare(new Coord(2, 3)),
+               new BoardSquare(new Coord(3, 1)),
+               new BoardSquare(new Coord(3, 2)),
+               new BoardSquare(new Coord(3, 3)),
             };
         }
-        
-        public bool IsCoordinateAvailable(Player player)
-        {
-          Coord playersCoord = player.GetCoord();
 
-          // BoardCoord.Any(c => c.IsEqual(playersCoord));
-          // LINQ
+        public void UpdateNameOnBoard(Coord coord, string name)
+        {
+            
+            for (int i = 0; i < availableCoords.Count; i++)
+            {
+               if (coord.IsEqual(availableCoords[i].GetCoord()))
+                {
+                    availableCoords[i].UpdateValue(name);
+                }
+            }
           
-          for (int i = 0; i < BoardCoord.Length; i++)
+        }
+        
+        
+
+        
+        public string GetValue(Coord coord)
+        {
+            // string value = "";
+            for (int i = 0; i < availableCoords.Count; i++)
+            {
+                if (coord.IsEqual(availableCoords[i].GetCoord()))
+                {
+                   return  availableCoords[i].GetValue();
+                }
+            }
+
+            return "";
+
+        }
+       
+        
+        public bool IsCoordinateAvailable(Coord coord)
+        {
+            for (int i = 0; i < availableCoords.Count; i++)
            {
-               if (playersCoord.IsEqual(BoardCoord[i]))
+               if (coord.IsEqual(availableCoords[i].GetCoord()))
                {
-                   return true;
+                   if (availableCoords[i].GetValue() == ".")
+                   {
+                       return true;
+                   }
+                   
+                   else return false;
+                   
                }
            }
 
            return false;
         }
 
-        public void Play(Player player)
-        {
-            while (!IsCoordinateAvailable(player))
-            {
-                
-                
-            }
-            if (IsCoordinateAvailable(player))
-            {
-                //get the coord and add it to a list 
-                //list 
-                List<Coord> TakenCoords = new List<Coord>();    
-                TakenCoords.Add( player.GetCoord());   
-               
-            }
-        }
-        
-        
-    }
+      }
 }
 
-// Board: Collection of Coords
-// Player1: Collection of Coords
-// Player2: Collection of Coords
 
-/*
-
-step1
-board: [1,1], [1,2], [2,1], [2,2]
-p1: []
-p2: []
-
-step2: p1 takes 1,2
-board: [1,1], [2,1], [2,2]
-p1: [1,2]
-p2: []
-
-
-Play: PlayerObject
-Coord coord
-while coord == invalid
-    newCoord = GetCoordFromInput
-    if newCoord is Valid and Available
-        coord = newCoord
-
-PlayerObject -> GiveCoord(coord)
-BoardObject -> RemoveCoord(coord)
-*/
-
-
-/*
-
-Board
-Player
-Input
-
-*/

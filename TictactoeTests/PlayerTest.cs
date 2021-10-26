@@ -9,7 +9,8 @@ using Xunit;
             [Fact]
             public void Player_Has_A_Name_X()
             {
-                Player player = new Player("x", new Coord(1,1));
+                Player player = new Player("x");
+               
 
                 var actual = player.GetName();
                 var expected = "x";
@@ -18,19 +19,8 @@ using Xunit;
                 
             }
             
-            [Fact]
-            public void Get_Player_Coord_And_Store_it()
-            {
-                Player player = new Player("x", new Coord(1,1));
-              
 
-                var actual = player.GetCoord();
-                var expected = new Coord(1, 1);
-                
-                Assert.True(expected.IsEqual(actual));
-            }
-            
-          
+
 
         }
     }

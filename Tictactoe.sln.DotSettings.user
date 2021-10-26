@@ -1,9 +1,35 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03e589ce_002D808c_002D426d_002D8814_002D941602996c0a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;TictactoeTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\roya.taleghani\AppData\Local\JetBrains\Rider2021.2\resharper-host\temp\Rider\vAny\CoverageData\_Tictactoe.857441897\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03e589ce_002D808c_002D426d_002D8814_002D941602996c0a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;TictactoeTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;Project Location="C:\Users\roya.taleghani\OneDrive - MYOB\Documents\Projects\Tictactoe\TictactoeTests" Presentation="&amp;lt;TictactoeTests&amp;gt;" /&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.PlayerTest&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=47797cf5_002Da957_002D40b3_002D9266_002D640fc87ad69a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="New_Value_On_Board_Is_Updated_For_Given_Coord" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.New_Value_On_Board_Is_Updated_For_Given_Coord&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.PlayerTest.Player_Has_A_Name_X&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.List_Of__Input&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.Player_Wins_When_All_The_First_Horizontal_Row_Is_Selected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.NoMovesMade&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=838c74d4_002D48fb_002D4f3b_002D99d9_002D489a8ceab62e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Player_Has_A_Name_X" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.PlayerTest.Player_Has_A_Name_X&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.BoardTest.Selected_Coordinate_Is_In_The_Range_But_Not_Available&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.BoardTest.Update_Board_Value&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.New_Value_On_Board_Is_Updated_For_Given_Coord&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.List_Of__Input&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.Player_Wins_When_All_The_First_Horizontal_Row_Is_Selected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest.NoMovesMade&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c477af20_002D683b_002D4d9d_002Dbca9_002De4497f89d4d3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="NoMovesMade" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::90E78321-3704-4D08-A0C0-A4DD936C89A7::net5.0::TictactoeTests.GameRulesTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
