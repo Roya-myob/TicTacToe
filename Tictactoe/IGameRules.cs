@@ -8,7 +8,7 @@
 
         public void StateOfGame(Board board, Player player1, Player player2);
 
-        public bool HasWon(Board board, Player player1, Player player2);
 
+        public bool HasPlayerWon(Player player, Board board);
     }
 }

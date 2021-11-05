@@ -8,5 +8,6 @@
 
         public string GetPlayerInput();
 
+        public void DrawGame(Board board);
     }
 }

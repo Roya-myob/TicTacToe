@@ -1,26 +1,20 @@
 ﻿using Tictactoe;
 using Xunit;
 
-    namespace TictactoeTests
+namespace TictactoeTests
+{
+    public class PlayerTest
     {
-        public class PlayerTest
+        [Fact]
+        public void Player_Has_A_Name_X()
         {
-
-            [Fact]
-            public void Player_Has_A_Name_X()
-            {
-                Player player = new Player("x");
-               
-
-                var actual = player.GetName();
-                var expected = "x";
-                
-                Assert.Equal(expected, actual);
-                
-            }
-            
+            Player player = new Player("x");
 
 
+            var actual = player.GetName();
+            var expected = "x";
 
+            Assert.Equal(expected, actual);
         }
     }
+}
