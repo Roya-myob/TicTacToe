@@ -25,5 +25,10 @@ namespace TictactoeTests
         {
             return _UserInputForTest[_index++];
         }
+
+        public void DrawGame(Board board)
+        {
+            
+        }
     }
 }

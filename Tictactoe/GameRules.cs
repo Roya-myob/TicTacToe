@@ -31,7 +31,6 @@ namespace Tictactoe
                 if (userInput.Contains("q"))
                 {
                     Console.WriteLine("you lost the game!");
-                    //GameState.PLAYER1_WINS;
                     GameState gameState = GameState.PLAYER2_WINS;
                 }
 

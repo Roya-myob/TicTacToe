@@ -9,17 +9,16 @@ namespace Tictactoe
         private Player _player2;
         private GameRules _gameRules;
         private GameIO _gameIo;
-        private GameState _gameState;
+        
 
-        public GameEngine(Board board, Player player1, Player player2, GameRules gameRules, GameIO gameIo,
-            GameState gameState)
+        public GameEngine(Board board, Player player1, Player player2, GameRules gameRules, GameIO gameIo)
         {
             _board = board;
             _player1 = player1;
             _player2 = player2;
             _gameRules = gameRules;
             _gameIo = gameIo;
-            _gameState = gameState;
+           
         }
 
         public void Start()
@@ -55,7 +54,8 @@ namespace Tictactoe
 
         public void ShowResult()
         {
-            _gameIo.ShowResult(_gameState);
+            _gameIo.ShowResult(_gameRules.GetGameState(_board, _player1, _player2));
+            
         }
     }
 }
